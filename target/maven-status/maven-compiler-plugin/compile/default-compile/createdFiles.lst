@@ -1,0 +1,7 @@
+kelas\produk.class
+kelas\MainApp.class
+kelas\controller\DaftarController.class
+kelas\data\DataProduk.class
+kelas\Navigator.class
+kelas\controller\DetailController.class
+kelas\controller\FormController.class

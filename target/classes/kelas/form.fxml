@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane stylesheets="@styles/app.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.FormController">
+    <top>
+        <HBox spacing="15.0" styleClass="header">
+            <Label styleClass="title" text="Pencatatan Produk" />
+            <Pane HBox.hgrow="ALWAYS" /> 
+            <Button onAction="#bukaDaftar" styleClass="button-secondary" text="Lihat Daftar Produk" />
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true">
+            <content>
+                <VBox spacing="20" style="-fx-background-color: #FF0000;" styleClass="page">
+                    <VBox spacing="15" style="-fx-background-color: #FFFFF;" styleClass="card">
+                        <Label styleClass="subtitle" text="Formulir Produk" />
+                        
+                        <Label styleClass="muted" text="Nama Produk" />
+                        <TextField fx:id="namaField" promptText="Contoh: Kopi Susu Botol" />
+                        
+                        <Label styleClass="muted" text="Kategori" />
+                        <ComboBox fx:id="kategoriBox" maxWidth="Infinity" />
+                        
+                        <Label styleClass="muted" text="Harga Produk (Rp)" />
+                        <TextField fx:id="hargaField" promptText="Contoh: 15000" />
+                        
+                        <Label styleClass="muted" text="Lampiran Gambar (Opsional)" />
+                        <ImageView fx:id="gambarView" fitHeight="150.0" fitWidth="300.0" preserveRatio="true" />
+                        <HBox spacing="10">
+                            <Button onAction="#pilihGambar" styleClass="button-secondary" text="Pilih Gambar" />
+                            <Button onAction="#hapusGambar" styleClass="button-secondary" text="Hapus Lampiran" />
+                        </HBox>
+                        
+                        <Separator />
+                        
+                        <Button maxWidth="Infinity" onAction="#simpan" styleClass="button-primary" text="Simpan &amp; Lihat Detail" />
+                        <Label fx:id="pesanLabel" styleClass="error" wrapText="true" />
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

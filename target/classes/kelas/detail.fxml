@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane stylesheets="@styles/app.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.DetailController">
+    <top>
+        <HBox spacing="20" styleClass="header">
+            <Label styleClass="title" text="Rincian Produk" />
+            <Pane HBox.hgrow="ALWAYS" />
+            <Button onAction="#bukaDaftar" styleClass="button-secondary" text="Kembali ke Daftar" />
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true">
+            <content>
+                <VBox spacing="20" style="-fx-background-color: #FF0000;" styleClass="page">
+                    <VBox spacing="12" styleClass="card">
+                        <Label styleClass="muted" text="KODE PRODUK" />
+                        <Label fx:id="kodeLabel" styleClass="subtitle" />
+                        
+                        <Label styleClass="muted" text="NAMA PRODUK" />
+                        <Label fx:id="namaLabel" style="-fx-font-size: 22px; -fx-font-weight: bold;" wrapText="true" />
+                        
+                        <Label styleClass="muted" text="KATEGORI" />
+                        <Label fx:id="kategoriLabel" style="-fx-font-size: 16px;" />
+                        
+                        <Label styleClass="muted" text="HARGA SATUAN" />
+                        <Label fx:id="hargaLabel" style="-fx-text-fill: #10b981;" styleClass="title" />
+                        
+                        <ImageView fx:id="gambarView" fitHeight="200.0" fitWidth="350" preserveRatio="true" />
+                        
+                        <Separator style="-fx-padding: 10 0;" />
+                        
+                        <HBox alignment="CENTER_LEFT" spacing="15">
+                            <Button onAction="#tambahLagi" styleClass="button-primary" text="+ Input Produk Lain" />
+                            <Label fx:id="pesanLabel" styleClass="success-text" wrapText="true" />
+                        </HBox>
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
