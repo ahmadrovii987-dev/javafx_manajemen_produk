@@ -25,12 +25,11 @@ Aplikasi ini adalah sistem manajemen pencatatan produk toko berbasis desktop yan
 ## 📸 Cuplikan Layar (Screenshots)
 
 > **Catatan untuk pengunjung:** *UI aplikasi ini telah dimodifikasi secara khusus agar tidak kaku seperti aplikasi Java pada umumnya.*
+- `![Halaman form] <img width="1359" height="727" alt="image" src="https://github.com/user-attachments/assets/34339772-d19c-4ec6-aa66-17f5a916edae" />
+- `![Halaman detail tanpa gambar] <img width="1357" height="727" alt="image" src="https://github.com/user-attachments/assets/c9c1a5e2-8bcb-4c5b-978e-283ea3dfcabe" />
+- `![Halaman detail dengan gambar] <img width="1362" height="728" alt="image" src="https://github.com/user-attachments/assets/d96a24d2-e4bb-4d59-b1ee-331f75b24ed3" />
+- `![Halaman Tabel] <img width="1366" height="727" alt="Screenshot 2026-11-09 155035" src="https://github.com/user-attachments/assets/80dd6761-5a7a-42be-9e92-1343d92ac4fe" />
 
-*(Tambahkan gambar screenshot aplikasimu di sini)*
-- `![Halaman Form](<img width="840" height="691" alt="image" src="https://github.com/user-attachments/assets/e25c1048-2fb6-4fcc-a334-f719179f9680" />)`
-- `![Halaman Tabel](<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/be874e06-9503-4611-a1b9-84d326279cee" />)`
-- `![Halaman Detail tanpa gambar](<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a888619a-72d6-4636-85f8-bebdc1edd95a" />)`
-- `![Halaman Detail tanpa gambar] (<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4dd570cf-07f9-4ef4-a752-d742c76e1803" />)
 
 
 ---
