@@ -1,0 +1,112 @@
+.root {
+    -fx-font-family: "Segoe UI", "SansSerif";
+    -fx-background-color: #f4f7fc;
+}
+
+.header {
+    -fx-padding: 20 30;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.06), 10, 0, 0, 3);
+    -fx-alignment: center-left;
+}
+
+.page { -fx-padding: 30; }
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 35;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 15, 0, 0, 5);
+}
+
+.title {
+    -fx-font-size: 26px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1e293b;
+}
+
+.subtitle {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #334155;
+}
+
+.muted {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 13px;
+    -fx-font-weight: normal;
+}
+
+.error {
+    -fx-text-fill: #ef4444;
+    -fx-font-weight: bold;
+}
+
+.success-text {
+    -fx-text-fill: #2563eb;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-padding: 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-transition: all 0.2s;
+}
+
+.button-primary {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+}
+
+.button-primary:hover {
+    -fx-background-color: #2563eb;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 99, 235, 0.4), 8, 0, 0, 4);
+}
+
+.button-secondary {
+    -fx-background-color: #f1f5f9;
+    -fx-text-fill: #334155;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #e2e8f0;
+}
+
+.text-field, .combo-box {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #3b82f6;
+    -fx-background-color: white;
+}
+
+.scroll-pane, .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8;
+}
+
+.table-view .column-header {
+    -fx-background-color: #f8fafc;
+    -fx-padding: 10;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f1f5f9;
+}
